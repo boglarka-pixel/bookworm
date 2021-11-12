@@ -54,7 +54,6 @@ table {
 }
 
 
-
 nav{
     font-family: var(--font-family);
     background-color:rgb(27, 38, 59);
@@ -78,27 +77,29 @@ a{
    cursor: pointer;
 }
 
+#wrap{
+    background-color: var(--color-bg);
+}
+
 .container{
+    max-width: 70vw;
+    margin: 0 auto;
     font-family: var(--font-family);
     line-height: 1.5rem;
-    padding: 2rem 3rem;
+    padding: 2rem;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: var(--color-bg);
-
+    gap: 1.2rem;
 }
 
 .container a{
-    width: 300px;
-    height: 100%;
-   
+    width: 13vw;
 }
 
 .container img{
     width: 100%;
+    aspect-ratio: 2 / 3;
     object-fit: cover;
     border-radius: 3px;
     border: 3px solid rgb(255, 255, 255);

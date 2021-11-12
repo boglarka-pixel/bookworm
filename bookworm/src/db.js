@@ -1,3 +1,5 @@
+
+
 const books = [
     {
         id: '1',
@@ -129,6 +131,22 @@ const books = [
         },
         cover:
             'https://images-na.ssl-images-amazon.com/images/I/71Vp4pp2c5L.jpg',
+    },
+    {
+        id: '9',
+        title: 'Sapiens',
+        url: 'sapiens',
+        description:
+            'Homo sapiens rules the world because it is the only animal that can believe in things that exist purely in its own imagination, such as gods, states, money and human rights.',
+        author: {
+            name: 'Yuval Noah Harari',
+            url: 'yuval-noah-harari',
+            avatar:
+                'https://images-na.ssl-images-amazon.com/images/I/51yMIHz8PSL._SX450_.jpg',
+            bio: 'Simon Sinek is an optimist. He teaches leaders and organizations how to inspire people. From members of Congress to foreign ambassadors, from small businesses to corporations like Microsoft and 3M, from Hollywood to the Pentagon, he has presented his ideas about the power of why. He has written two books, Leaders Eat Last and Start With Why and is quoted frequently by national publications. Sinek also regularly shares 140 characters of inspiration on Twitter (@simonsinek).',
+        },
+        cover:
+            'https://kara.reviews/media/review/covers/sapiens-a-brief-history-of-humankind.jpg',
     },
 ]
 
