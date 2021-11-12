@@ -1,10 +1,24 @@
 import books from './db.js';
 
-function Book() {
+import './App.css';
+
+function Book({ cover, name, title }) {
+
     return (
-        <div>
-            hello
+        <div className="container">
+            <a href='/'>
+                <article>
+                    <img src={cover} alt="" />
+                    <h2>
+                        <span className="author-name">{name}</span>
+                        <br />
+                        <span className="book-title">{title}</span>
+                    </h2>
+                </article>
+            </a>
         </div>
+
+
     )
 }
 

@@ -10,6 +10,29 @@ function Main() {
                 <div className="container">
 
 
+
+                    {books.map(book => (
+                        <Book
+                            key={book.id}
+                            title={book.title}
+                            cover={book.cover}
+                            name={book.author.name}
+                        />
+                    ))}
+
+                </div>
+            </div>
+
+        </main>
+
+    )
+}
+
+export default Main;
+
+
+/*
+
                     {books.map(book => (
                         <a href='/' key={book.id} >
                             <article>
@@ -23,12 +46,4 @@ function Main() {
                         </a>
                     ))}
 
-                </div>
-            </div>
-
-        </main>
-
-    )
-}
-
-export default Main;
+*/
