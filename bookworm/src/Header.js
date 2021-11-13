@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 function Header() {
     return (
         <nav>
             <div className="header">
                 <h1>
-                    <a aria-current="page" href="/">Bookworms</a>
+                    <Link to="/">
+                        Bookworms
+                    </Link>
                 </h1>
-            </div>
 
+            </div>
         </nav>
     )
 }

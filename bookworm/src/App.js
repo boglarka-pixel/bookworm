@@ -1,13 +1,23 @@
-import Header from './Header';
+
 import Main from './Main';
-import './App.css';
+import Book from './Book';
+
+import './Main.css';
+import {
+  Routes,
+  BrowserRouter,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Main />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route path="/book/:bookUrl" element={<Book />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
   );
 }
