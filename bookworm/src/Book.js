@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import books from "./db";
-
+import { useParams } from 'react-router';
 import { useState } from 'react';
 
 
 export default function Book() {
 
-
+    let { bookUrl } = useParams();
 
     return (
         <div>

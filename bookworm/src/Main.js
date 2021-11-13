@@ -1,7 +1,7 @@
 import books from './db.js';
 import Header from './Header';
 import './Main.css';
-import { useParams } from 'react-router';
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 function Main() {
 
-    let { bookUrl } = useParams();
+
 
     return (
         <div>
@@ -18,14 +18,14 @@ function Main() {
                 <div id="wrap">
                     <div className="container">
                         {books.map(book => (
-                            <Link to={`/book/:${bookUrl}`}>
+                            <Link to={`/book/${book.url}`}>
                                 <article>
                                     <img src={book.cover} alt="" />
                                     <h2>
                                         <span className="author-name">{book.author.name}</span>
                                         <br />
                                         <span className="book-title">{book.title}</span>
-                                        {bookUrl}
+
                                     </h2>
                                 </article>
                             </Link>
