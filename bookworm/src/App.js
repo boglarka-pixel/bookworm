@@ -13,9 +13,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />}>
-          <Route path="/book/:bookUrl" element={<Book />} />
-        </Route>
+        <Route path="/" element={<Main />} />
+        <Route path="/book/:bookUrl" element={<Book />} />
       </Routes>
     </BrowserRouter>
 

@@ -1,8 +1,6 @@
 import books from './db.js';
 import Header from './Header';
 import './Main.css';
-
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 

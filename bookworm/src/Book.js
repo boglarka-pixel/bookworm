@@ -2,35 +2,38 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import books from "./db";
 import { useParams } from 'react-router';
-import { useState } from 'react';
+import './Book.css'
 
 
 export default function Book() {
 
     let { bookUrl } = useParams();
 
+
+    const aboutBook = books.filter(book => book.url === bookUrl);
+
+
     return (
         <div>
             <Header />
             <main>
-                <div id="wrap">
-                    <div className="container">
-                        {books.map(book => (
-                            <Link to='/'>
-                                <article>
-                                    <img src={book.cover} alt="" />
-                                    <h2>
-                                        <span className="author-name">{book.author.name}</span>
-                                        <br />
-                                        <span className="book-title">{book.title}</span>
+                <div id="bookWrapper">
+                    {aboutBook.map(book => (
+                        <div className="container2">
+                            <div class='coverImg'>
+                                <img src={book.cover} alt="" />
+                            </div>
 
-                                    </h2>
-                                </article>
-                            </Link>
-                        ))}
-                    </div>
+                            <div class="details">
+                                <h1>{book.title}</h1>
+                                <Link class="author" to={`/book/${book.url}`}> {book.author.name}
+                                </Link>
+                                <p>{book.description}</p>
+                            </div>
+
+                        </div>
+                    ))}
                 </div>
-
             </main>
         </div>
     );
