@@ -63,6 +63,8 @@ body {
 
 nav{
     font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 600;
     background-color:rgb(27, 38, 59);
     color: white;
     padding: 1rem 0px;
@@ -80,11 +82,6 @@ nav{
     border: 3px solid rgb(255, 255, 255);
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
- }
 
  #bookWrapper{
     font-family: var(--font-family);
@@ -105,13 +102,17 @@ a{
     text-decoration: none;
     color: rgb(77, 109, 168);
     font-weight: 600;
+    cursor: pointer;
+    
 }
 
 .container2 p{
     line-height: 1.625;
+    padding-top: 1rem;
 }
 
 .container2 h1{
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 2rem;
+    padding-bottom: 1rem;
 }
