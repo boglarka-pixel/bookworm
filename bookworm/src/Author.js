@@ -1,7 +1,6 @@
 import { useParams } from 'react-router'
 import './Author.css'
 import Header from './Header';
-import { Link } from 'react-router-dom';
 import books from './db';
 
 function Author() {
@@ -16,7 +15,17 @@ function Author() {
         <div>
             <Header />
             <main>
-                hellooo
+                {aboutAuthor.map(book => (
+                    <div key={book.id} className="wrapper-author">
+                        <div className="cover"></div>
+                        <img src={book.author.avatar} alt="" />
+                        <h1>{book.author.name}</h1>
+                        <p>{book.author.bio}</p>
+                    </div>
+
+
+                ))}
+
             </main>
         </div>
     )
