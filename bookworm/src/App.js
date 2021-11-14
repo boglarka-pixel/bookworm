@@ -1,4 +1,4 @@
-
+import Author from './Author';
 import Main from './Main';
 import Book from './Book';
 
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/book/:bookUrl" element={<Book />} />
+        <Route path="/book/author/:url" element={<Author />} />
       </Routes>
     </BrowserRouter>
 

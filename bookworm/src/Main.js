@@ -17,7 +17,7 @@ function Main() {
                     <div className="container">
                         {books.map(book => (
                             <Link to={`/book/${book.url}`}>
-                                <article>
+                                <article key={book.id}>
                                     <img src={book.cover} alt="" />
                                     <h2>
                                         <span className="author-name">{book.author.name}</span>
